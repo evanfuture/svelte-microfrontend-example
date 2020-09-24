@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+	<title>Feature App</title>
+	<link rel='icon' type='image/png' href='/favicon.ico'>
+
+	<script defer src='/build/itemdetail.js'></script>
+</head>
+
+<body>
+	<itemdetail-spa issueid="1234" theme="light" baseapiurl="https://evanpayne.com" preview="true" />
+
+
+	<script>
+		document.querySelector('itemdetail-spa').addEventListener('itemdetailSpaSuccess', (e) => {
+			console.log("Success!", e);
+		});
+	</script>
+</body>
+</html>
